@@ -8,7 +8,7 @@
   </a>
 </p>
 <h1 align="center">
-  Medusa
+  StreamCommerce
 </h1>
 
 <h4 align="center">
@@ -30,6 +30,11 @@
   <a href="https://twitter.com/intent/follow?screen_name=medusajs">
     <img src="https://img.shields.io/twitter/follow/medusajs.svg?label=Follow%20@medusajs" alt="Follow @medusajs" />
   </a>
+  <p align="center">
+    <a href="https://heroku.com/deploy?template=https://github.com/stream-protocol/e-commerce-backend/tree/feat/deploy-heroku">
+    <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
+  </a>
+  </p>
 </p>
 
 ## Compatibility
