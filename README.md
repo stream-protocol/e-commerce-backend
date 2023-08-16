@@ -8,7 +8,7 @@
   </a>
 </p>
 <h1 align="center">
-  StreamCommerce (Powered by Medusa)
+  A Headless e-Commerce Platform
 </h1>
 
 <h4 align="center">
