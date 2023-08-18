@@ -1,4 +1,11 @@
 const dotenv = require("dotenv");
+const BACKEND_URL = process.env.BACKEND_URL || "localhost:9000"
+const ADMIN_URL = process.env.ADMIN_URL || "localhost:7001"
+const STORE_URL = process.env.STORE_URL || "localhost:8000"
+
+const Auth0ClientId = process.env.AUTH0_CLIENT_ID || ""
+const Auth0ClientSecret = process.env.AUTH0_CLIENT_SECRET || ""
+const Auth0Domain = process.env.AUTH0_ISSUER_BASE_URL || ""
 
 let ENV_FILE_NAME = "";
 switch (process.env.NODE_ENV) {
@@ -28,125 +35,113 @@ const ADMIN_CORS =
 // CORS to avoid issues when consuming Medusa from a client
 const STORE_CORS = process.env.STORE_CORS || "http://localhost:8000,https://streampay.store";
 
-const DATABASE_TYPE = process.env.DATABASE_TYPE || "postgres";
-const DATABASE_URL = process.env.DATABASE_URL || "postgres://zvampqtevcrvys:7c915f8898e961e737a28818abfb40778cca7318d579e5db8ba0d8c9e565cfc6@ec2-52-215-209-64.eu-west-1.compute.amazonaws.com:5432/dfmvamqto7c7bq";
-const REDIS_URL = process.env.REDIS_URL || "redis://default:ORhjrjX5quu7c6q8KePih5LwpdVgpeCTw3UQkBNFQQEYZlkTvFcVVlZOVeaQhCXD@ki6zg7.stackhero-network.com:6379";
+const DATABASE_URL =
+    process.env.DATABASE_URL || "postgres://xguzpcbdyfmmrm:c64a54087830d903c0267bd6d5472efa619079987de938cf729bbd91cc225e31@ec2-18-202-8-133.eu-west-1.compute.amazonaws.com:5432/d2fsgm84qcn8rc";
 
-// Stripe keys
-const STRIPE_API_KEY = process.env.STRIPE_API_KEY || "pk_test_51N5Q0DKjdN5iZkcX6TOl6wL75mhW57IkROQ46wkSlvlYnCdBzy9Ra4qvgESfhsF1F5876srLzWN33gn5ZxB2dSkz00LHPH419z";
-const STRIPE_WEBHOOK_SECRET = process.env.STRIPE_WEBHOOK_SECRET || "pk_test_51N5Q0DKjdN5iZkcX6TOl6wL75mhW57IkROQ46wkSlvlYnCdBzy9Ra4qvgESfhsF1F5876srLzWN33gn5ZxB2dSkz00LHPH419z";
+const REDIS_URL = process.env.REDIS_URL || "redis://default:6jVW8dbd8VDUrYY7tst3S3ujKPnJYl9SLAoaEOLDZEuTTwmeLe9cX62aES0GUykh@kxmmn6.stackhero-network.com:6379";
 
 const plugins = [
     `medusa-fulfillment-manual`,
     `medusa-payment-manual`,
-    // To enable the admin plugin, uncomment the following lines and run `yarn add @medusajs/admin`
-    // Please note is not recommended to build the admin in production, cause a minimum of 2GB RAM
-    // is required.
+    {
+        resolve: `@medusajs/file-local`,
+        options: {
+            upload_dir: "uploads",
+        },
+    },
     {
         resolve: "@medusajs/admin",
         /** @type {import('@medusajs/admin').PluginOptions} */
         options: {
             autoRebuild: true,
-            path: "app",
+            develop: {
+                open: process.env.OPEN_BROWSER !== "false",
+            },
         },
     },
     {
-        resolve: `medusa-payment-stripe`,
+        resolve: "medusa-plugin-auth",
+        /** @type {import('medusa-plugin-auth').AuthOptions} */
         options: {
-            api_key: STRIPE_API_KEY,
-            webhook_secret: STRIPE_WEBHOOK_SECRET,
-            automatic_payment_methods: true,
-        },
-    },
-    {
-        resolve: `medusa-file-minio`,
-        options: {
-            endpoint: process.env.MINIO_ENDPOINT,
-            bucket: process.env.MINIO_BUCKET,
-            access_key_id: process.env.MINIO_ACCESS_KEY,
-            secret_access_key: process.env.MINIO_SECRET_KEY,
-        },
-    },
-    {
-        resolve: `medusa-plugin-sendgrid`,
-        options: {
-            api_key: process.env.SENDGRID_API_KEY,
-            from: process.env.SENDGRID_FROM,
-            order_placed_template: process.env.SENDGRID_ORDER_PLACED_ID,
-            localization: {
-                "en-EN": { // locale key
-                    order_placed_template: process.env.SENDGRID_ORDER_PLACED_ID_LOCALIZED,
+            // strict: "all", // or "none" or "store" or "admin"
+            auth0: {
+                clientID: Auth0ClientId,
+                clientSecret: Auth0ClientSecret,
+                auth0Domain: Auth0Domain,
+
+                admin: {
+                    callbackUrl: `http://localhost:9000/admin/auth/auth0/cb`,
+                    failureRedirect: `${ADMIN_URL}/login`,
+
+                    // The success redirect can be overriden from the client by adding a query param `?redirectTo=your_url` to the auth url
+                    // This query param will have the priority over this configuration
+                    successRedirect: `${ADMIN_URL}/`,
+
+                    // authPath: '/admin/auth/auth0',
+                    // authCallbackPath: '/admin/auth/auth0/cb',
+                    // expiresIn: 24 * 60 * 60 * 1000,
+                    // verifyCallback: (container, req, accessToken, refreshToken, extraParams, profile, strict) => {
+                    //    // implement your custom verify callback here if you need it
+                    // }
+                },
+
+                store: {
+                    callbackUrl: `http://localhost:9000/store/auth/auth0/cb`,
+                    failureRedirect: `http://${STORE_URL}/login`,
+
+                    // The success redirect can be overriden from the client by adding a query param `?redirectTo=your_url` to the auth url
+                    // This query param will have the priority over this configuration
+                    successRedirect: `http://${STORE_URL}`,
+
+                    // authPath: '/store/auth/auth0',
+                    // authCallbackPath: '/store/auth/auth0/cb',
+                    // expiresIn: 24 * 60 * 60 * 1000,
+                    // verifyCallback: (container, req, accessToken, refreshToken, extraParams, profile, strict) => {
+                    //    // implement your custom verify callback here if you need it
+                    // }
                 }
             }
         }
     },
     {
-        resolve: `medusa-plugin-meilisearch`,
+        resolve: `medusa-payment-paypal`,
         options: {
-            config: {
-                host: process.env.MEILISEARCH_HOST,
-                apiKey: process.env.MEILISEARCH_API_KEY,
-            },
-            settings: {
-                // index name
-                products: {
-                    indexSettings: {
-                        searchableAttributes: [
-                            "title",
-                            "description",
-                            "variant_sku",
-                        ],
-                        displayedAttributes: [
-                            "title",
-                            "description",
-                            "variant_sku",
-                            "thumbnail",
-                            "handle",
-                        ],
-                    },
-                    primaryKey: "id",
-                    transform: (product) => ({
-                        id: product.id,
-                        // other attributes...
-                    }),
-                },
-            },
+            sandbox: process.env.PAYPAL_SANDBOX,
+            clientId: process.env.PAYPAL_CLIENT_ID,
+            clientSecret: process.env.PAYPAL_CLIENT_SECRET,
+            authWebhookId: process.env.PAYPAL_AUTH_WEBHOOK_ID,
         },
     },
 ];
 
 const modules = {
     eventBus: {
-        resolve: "@medusajs/event-bus-redis",
-        options: {
-            redisUrl: REDIS_URL
-        }
+      resolve: "@medusajs/event-bus-redis",
+      options: {
+        redisUrl: REDIS_URL
+      }
     },
     cacheService: {
-        resolve: "@medusajs/cache-redis",
-        options: {
-            redisUrl: REDIS_URL
-        }
+      resolve: "@medusajs/cache-redis",
+      options: {
+        redisUrl: REDIS_URL
+      }
     },
-}
+};
 
 /** @type {import('@medusajs/medusa').ConfigModule["projectConfig"]} */
 const projectConfig = {
     jwtSecret: process.env.JWT_SECRET,
     cookieSecret: process.env.COOKIE_SECRET,
-    database_database: "./medusa-db.sql",
-    database_type: DATABASE_TYPE,
     store_cors: STORE_CORS,
+    database_url: DATABASE_URL,
     admin_cors: ADMIN_CORS,
+    database_extra: {
+        ssl: true,
+    }
     // Uncomment the following lines to enable REDIS
-    redis_url: REDIS_URL
-}
-
-if (DATABASE_URL && DATABASE_TYPE === "postgres") {
-    projectConfig.database_url = DATABASE_URL;
-    delete projectConfig["database_database"];
-}
-
+    // redis_url: REDIS_URL
+};
 
 /** @type {import('@medusajs/medusa').ConfigModule} */
 module.exports = {
