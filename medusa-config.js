@@ -28,8 +28,8 @@ const ADMIN_CORS =
 // CORS to avoid issues when consuming Medusa from a client
 const STORE_CORS = process.env.STORE_CORS || "http://localhost:8000,https://streampay.store";
 
-const DATABASE_TYPE = process.env.DATABASE_TYPE || "sqlite";
-const DATABASE_URL = process.env.DATABASE_URL || "postgres://xguzpcbdyfmmrm:c64a54087830d903c0267bd6d5472efa619079987de938cf729bbd91cc225e31@ec2-18-202-8-133.eu-west-1.compute.amazonaws.com:5432/d2fsgm84qcn8rc";
+const DATABASE_TYPE = process.env.DATABASE_TYPE || "postgres";
+const DATABASE_URL = process.env.DATABASE_URL || "postgres://zvampqtevcrvys:7c915f8898e961e737a28818abfb40778cca7318d579e5db8ba0d8c9e565cfc6@ec2-52-215-209-64.eu-west-1.compute.amazonaws.com:5432/dfmvamqto7c7bq";
 const REDIS_URL = process.env.REDIS_URL || "redis://default:ORhjrjX5quu7c6q8KePih5LwpdVgpeCTw3UQkBNFQQEYZlkTvFcVVlZOVeaQhCXD@ki6zg7.stackhero-network.com:6379";
 
 // Stripe keys

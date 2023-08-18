@@ -1,14 +1,14 @@
 <p align="center">
   <a href="https://www.medusajs.com">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://i.imgur.com/xcmTyPZ.png">
-    <source media="(prefers-color-scheme: light)" srcset="https://i.imgur.com/xcmTyPZ.png">
-    <img alt="StreamCommerce logo" src="https://i.imgur.com/xcmTyPZ.png">
+    <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/59018053/229103275-b5e482bb-4601-46e6-8142-244f531cebdb.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/59018053/229103726-e5b529a3-9b3f-4970-8a1f-c6af37f087bf.svg">
+    <img alt="Medusa logo" src="https://user-images.githubusercontent.com/59018053/229103726-e5b529a3-9b3f-4970-8a1f-c6af37f087bf.svg">
     </picture>
   </a>
 </p>
 <h1 align="center">
-  A Headless e-Commerce Platform
+  Medusa
 </h1>
 
 <h4 align="center">
@@ -17,7 +17,7 @@
 </h4>
 
 <p align="center">
-  Building blocks for digital e-commerce
+  Building blocks for digital commerce
 </p>
 <p align="center">
   <a href="https://github.com/medusajs/medusa/blob/master/CONTRIBUTING.md">
@@ -27,15 +27,8 @@
   <a href="https://discord.gg/xpCwq3Kfn8">
     <img src="https://img.shields.io/badge/chat-on%20discord-7289DA.svg" alt="Discord Chat" />
   </a>
-    <p align="center">
-  **Stream**Commerce
-  </a>
-  <a href="https://twitter.com/intent/follow?screen_name=stream_protocol">
-    <img src="https://img.shields.io/twitter/follow/medusajs.svg?label=Follow%20@stream_protocol" alt="Follow @stream_protocol" />
-  </a>
-  <p align="center">
-    <a href="https://heroku.com/deploy?template=https://github.com/stream-protocol/e-commerce-backend/tree/feat/deploy-heroku">
-    <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
+  <a href="https://twitter.com/intent/follow?screen_name=medusajs">
+    <img src="https://img.shields.io/twitter/follow/medusajs.svg?label=Follow%20@medusajs" alt="Follow @medusajs" />
   </a>
 </p>
 
@@ -69,14 +62,9 @@ The community and core team are available in [GitHub Discussions](https://github
 
 Join our [Discord server](https://discord.com/invite/medusajs) to meet other community members.
 
-
-## Stream Protocol Channels
-- [Stream Protocol Blog](https://streamprotocol.org/blog/)
-- [x](https://x.com/stream_protocol)
-
 ## Other channels
 
 - [GitHub Issues](https://github.com/medusajs/medusa/issues)
-- [x](https://x.com/medusajs)
+- [Twitter](https://twitter.com/medusajs)
 - [LinkedIn](https://www.linkedin.com/company/medusajs)
 - [Medusa Blog](https://medusajs.com/blog/)

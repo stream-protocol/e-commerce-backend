@@ -1,0 +1,29 @@
+{
+    "sqltools.connections": [
+        {
+            "pgOptions": {
+                "ssl": true
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "password": "$ heroku git:clone -a stream-e-commerce-backend  $ cd stream-e-commerce-backend",
+            "database": "d48q6ng0605lct",
+            "username": "sphcfravvhgwnp",
+            "name": "medusa-store",
+            "group": "postgres"
+        },
+        {
+            "previewLimit": 50,
+            "server": "ec2-52-215-209-64.eu-west-1.compute.amazonaws.com",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "username": "zvampqtevcrvys",
+            "database": "dfmvamqto7c7bq",
+            "group": "postgres",
+            "name": "medusa-store",
+            "password": "7c915f8898e961e737a28818abfb40778cca7318d579e5db8ba0d8c9e565cfc6"
+        }
+    ]
+}
