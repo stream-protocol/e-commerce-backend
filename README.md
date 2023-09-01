@@ -8,7 +8,7 @@
   </a>
 </p>
 <h1 align="center">
-  **Stream**Payments Gateway (under construction)
+  StreamPayments Gateway (under construction)
 </h1>
 **Stream**Payments™ and the concept of a Web3 payment gateway API. **Stream**Payments™ is a platform (Based on Medusa Admin UI) that offers a Web3-based payment gateway API for businesses to integrate online payment processing with blockchain technology. StreamPayment Web3 payment gateway refers to the next evolution of the internet, where decentralized technologies like Circle´s CCTP protocol, USDC stablecoin, and Solana blockchain technologies are used to build applications that are more secure, private, and user-centric.
 <h4 align="center">
