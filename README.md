@@ -1,23 +1,23 @@
 <p align="center">
-  <a href="https://www.medusajs.com">
+  <a href="https://www.streampayments.org">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/59018053/229103275-b5e482bb-4601-46e6-8142-244f531cebdb.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/59018053/229103726-e5b529a3-9b3f-4970-8a1f-c6af37f087bf.svg">
-    <img alt="Medusa logo" src="https://user-images.githubusercontent.com/59018053/229103726-e5b529a3-9b3f-4970-8a1f-c6af37f087bf.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="[https://user-images.githubusercontent.com/59018053/229103275-b5e482bb-4601-46e6-8142-244f531cebdb.svg](https://i.imgur.com/xcmTyPZ.png)">
+    <source media="(prefers-color-scheme: light)" srcset="[https://user-images.githubusercontent.com/59018053/229103726-e5b529a3-9b3f-4970-8a1f-c6af37f087bf.svg](https://i.imgur.com/xcmTyPZ.png)">
+    <img alt="StreamPayments logo" src="[https://user-images.githubusercontent.com/59018053/229103726-e5b529a3-9b3f-4970-8a1f-c6af37f087bf.svg](https://i.imgur.com/xcmTyPZ.png)">
     </picture>
   </a>
 </p>
 <h1 align="center">
-  Medusa
+  Medusa + StreamPayments Gateway
 </h1>
-
+ StreamPayments Gateway: A web3 payment gateway API is a set of endpoints and functionalities that allow businesses to integrate online payment processing into their websites or applications. Payment gateways handle the secure transmission of payment information between the customer, merchant, and financial institution. StreamPayments™ a crucial role in facilitating various payment methods, such as credit cards, digital wallets, and online banking.
 <h4 align="center">
   <a href="https://docs.medusajs.com">Documentation</a> |
   <a href="https://www.medusajs.com">Website</a>
 </h4>
 
 <p align="center">
-  Building blocks for digital commerce
+  Medusa: Building blocks for digital commerce
 </p>
 <p align="center">
   <a href="https://github.com/medusajs/medusa/blob/master/CONTRIBUTING.md">
@@ -44,13 +44,13 @@ Visit the [Docs](https://docs.medusajs.com/development/backend/prepare-environme
 
 ## What is Medusa
 
-Medusa is a set of commerce modules and tools that allow you to build rich, reliable, and performant commerce applications without reinventing core commerce logic. The modules can be customized and used to build advanced ecommerce stores, marketplaces, or any product that needs foundational commerce primitives. All modules are open-source and freely available on npm.
+Medusa is a set of commerce modules and tools that allow you to build rich, reliable, and performant commerce applications without reinventing core commerce logic. The modules can be customized and used to build advanced e-commerce stores, marketplaces, or any product that needs foundational commerce primitives. All modules are open-source and freely available on npm.
 
 Learn more about [Medusa’s architecture](https://docs.medusajs.com/development/fundamentals/architecture-overview) and [commerce modules](https://docs.medusajs.com/modules/overview) in the Docs.
 
 ## Roadmap, Upgrades & Plugins
 
-You can view the planned, started and completed features in the [Roadmap discussion](https://github.com/medusajs/medusa/discussions/categories/roadmap).
+You can view the planned, started, and completed features in the [Roadmap discussion](https://github.com/medusajs/medusa/discussions/categories/roadmap).
 
 Follow the [Upgrade Guides](https://docs.medusajs.com/upgrade-guides/) to keep your Medusa project up-to-date.
 
@@ -58,7 +58,7 @@ Check out all [available Medusa plugins](https://medusajs.com/plugins/).
 
 ## Community & Contributions
 
-The community and core team are available in [GitHub Discussions](https://github.com/medusajs/medusa/discussions), where you can ask for support, discuss roadmap, and share ideas.
+The community and core team are available in [GitHub Discussions](https://github.com/medusajs/medusa/discussions), where you can ask for support, discuss the roadmap, and share ideas.
 
 Join our [Discord server](https://discord.com/invite/medusajs) to meet other community members.
 
