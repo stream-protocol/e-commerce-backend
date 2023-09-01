@@ -12,7 +12,7 @@
 <h4 align="center">
 StreamPayments™ and the concept of a Web3 payment gateway API. StreamPayments™ is a platform (Based on Medusa Admin UI) that offers a Web3-based payment gateway API for businesses to integrate online payment processing with blockchain technology. StreamPayments™ Web3 payment gateway refers to the next evolution of the internet, where decentralized technologies like Circle´s CCTP protocol, USDC stablecoin, and Solana blockchain technologies are used to build applications that are more secure, private, and user-centric.
 <h4 align="center">
-  <a href="https://docs.streampayments.org">Documentation</a> |
+  <a href="https://app.gitbook.com/invite/9eBaoUspGpGsG968Qbyp/aB9DR79hOZHVtMTWC4Ei">Documentation</a> |
   <a href="https://www.streampayments.org">Website</a>
 </h4>
 
