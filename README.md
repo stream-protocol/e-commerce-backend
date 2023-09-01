@@ -3,7 +3,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="[https://i.imgur.com/dRSxCtW.png]">
     <source media="(prefers-color-scheme: light)" srcset="[https://i.imgur.com/xcmTyPZ.png]">
-    <img alt="StreamPayments logo" src="[https://i.imgur.com/3jUHsfu.png]">
+    <img alt="StreamPayments logo" src="(https://i.imgur.com/3jUHsfu.png)">
     </picture>
   </a>
 </p>
