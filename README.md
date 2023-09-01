@@ -1,14 +1,14 @@
 <p align="center">
   <a href="https://www.streampayments.org">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="[https://user-images.githubusercontent.com/59018053/229103275-b5e482bb-4601-46e6-8142-244f531cebdb.svg](https://i.imgur.com/xcmTyPZ.png)">
-    <source media="(prefers-color-scheme: light)" srcset="[https://user-images.githubusercontent.com/59018053/229103726-e5b529a3-9b3f-4970-8a1f-c6af37f087bf.svg](https://i.imgur.com/xcmTyPZ.png)">
-    <img alt="StreamPayments logo" src="[https://user-images.githubusercontent.com/59018053/229103726-e5b529a3-9b3f-4970-8a1f-c6af37f087bf.svg](https://i.imgur.com/xcmTyPZ.png)">
+    <source media="(prefers-color-scheme: dark)" srcset="[https://i.imgur.com/dRSxCtW.png]">
+    <source media="(prefers-color-scheme: light)" srcset="[https://i.imgur.com/xcmTyPZ.png]">
+    <img alt="StreamPayments logo" src="[https://i.imgur.com/xcmTyPZ.png]">
     </picture>
   </a>
 </p>
 <h1 align="center">
-  Stream**Payments Gateway (under construction)
+  **Stream**Payments Gateway (under construction)
 </h1>
 **Stream**Payments™ and the concept of a Web3 payment gateway API. **Stream**Payments™ is a platform (Based on Medusa Admin UI) that offers a Web3-based payment gateway API for businesses to integrate online payment processing with blockchain technology. StreamPayment Web3 payment gateway refers to the next evolution of the internet, where decentralized technologies like Circle´s CCTP protocol, USDC stablecoin, and Solana blockchain technologies are used to build applications that are more secure, private, and user-centric.
 <h4 align="center">
