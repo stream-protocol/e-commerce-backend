@@ -17,7 +17,7 @@ StreamPaymentsâ„¢ and the concept of a Web3 payment gateway API. StreamPaymentsâ
 </h4>
 
 <p align="center">
-  Medusa + Stream**Payments Provider
+  Medusa + StreamPayments Provider
 </p>
 <p align="center">
   <a href="https://github.com/stream-protocol/medusa-payment-streampay/blob/master/CONTRIBUTING.md">
