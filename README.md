@@ -88,9 +88,7 @@
 
 9. **StreamPOS: Point Of Sale System:** Medusa backend + Stream**POS** Widget
    
-10. **Merchant Portal (Medusa Admin UI):** 
-
-**Stream**Payments™ Merchant Portal is a platform that offers a Web3-based payment gateway API for businesses to integrate online payment processing with Solana blockchain technology. Web3 typically refers to the next evolution of the internet, where decentralized technologies like blockchain are used to build applications that are more secure, private, and user-centric.
+10. **Merchant Portal (Medusa Admin UI):** **Stream**Payments™ Merchant Portal is a platform that offers a Web3-based payment gateway API for businesses to integrate online payment processing with Solana blockchain technology. Web3 typically refers to the next evolution of the internet, where decentralized technologies like blockchain are used to build applications that are more secure, private, and user-centric.
     
 12. **StreamPay Widgets:**
 
