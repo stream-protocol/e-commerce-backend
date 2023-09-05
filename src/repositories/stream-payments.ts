@@ -1,15 +1,8 @@
-import { streamPayments } from "../models/stream-payments";
-import { EntityRepository, FindManyOptions, Repository } from "typeorm";
-import { flatten, groupBy, map, merge } from "lodash";
+import { EntityRepository, Repository } from "typeorm";
+import { StreamPayments } from "../models/stream-payments"; // Import StreamPayments model
 
-@EntityRepository(streamPayments)
-export class streamPaymentsRepository extends Repository<streamPayments> {
-    public async findByCartId(cartId: string): Promise<streamPayments> {
-        return await this.findOne({
-            where: {
-                cart_id: cartId,
-            },
-        }
-        );
-    }
+@EntityRepository(StreamPayments)
+export class StreamPaymentsRepository extends Repository<StreamPayments> {
+  // You can define custom repository methods here if needed
+  // For example, finding payments by a specific criteria, aggregations, etc.
 }

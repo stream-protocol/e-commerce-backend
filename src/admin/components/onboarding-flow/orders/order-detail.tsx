@@ -13,7 +13,7 @@ const OrderDetail = () => {
         capturing payment, creating fulfillments, and more.
       </p>
       <h2 className="text-base mt-5 pt-5 pb-5 font-semibold text-black border-t border-gray-300 border-solid">
-        Start developing with Medusa + StreamPay
+        Start developing with Medusa
       </h2>
       <p className="text-sm">
         Medusa is a completely customizable commerce solution. We've curated

@@ -1,28 +1,27 @@
-import {
-    Entity,
-    PrimaryGeneratedColumn,
-    Column,
-    BaseEntity,
-    ManyToOne,
-    JoinColumn,
-  } from "typeorm";
-  import { Cart } from "@medusajs/medusa";
-  
-  @Entity()
-  export class StreamPayment extends BaseEntity {
-    @PrimaryGeneratedColumn()
-    id: number;
-  
-    @Column()
-    cart_id: string;
-  
-    @Column({ type: "numeric", precision: 10, scale: 2 })
-    total_amount: number;
-  
-    // Add other properties related to Stream Payments
-  
-    @ManyToOne(() => Cart)
-    @JoinColumn({ name: "cart_id", referencedColumnName: "id" })
-    cart: Cart;
-  }
-  
+// Import necessary dependencies and modules
+import { Entity, PrimaryGeneratedColumn, Column, BaseEntity, OneToMany } from "typeorm";
+import { Payment } from "./models/stream-payments"; // Import the Payment model if you have one
+
+// Define the Stream Payment entity
+@Entity()
+export class Payment extends BaseEntity {
+  @PrimaryGeneratedColumn()
+  id: number;
+
+  @Column()
+  transactionId: string;
+
+  @Column()
+  amount: number;
+
+  @Column()
+  currency: string;
+
+  // Add more fields specific to Stream Payment model
+
+  // Define the relationship with Payment if applicable
+  @OneToMany(() => Payment, (payment) => payment.streamPayment)
+  payments: Payment[];
+
+  // Define any methods or custom logic related to StreamPayment
+}

@@ -20,7 +20,7 @@ const OrdersList = ({ onNext, isComplete, data }: StepContentProps) => {
     const variant = product.variants[0] ?? null;
     try {
       const { draft_order } = await createDraftOrder({
-        email: "customer@streampayments.org",
+        email: "customer@medusajs.com",
         items: [
           variant
             ? {
