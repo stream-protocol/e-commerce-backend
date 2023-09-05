@@ -3,11 +3,11 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="[https://i.imgur.com/dRSxCtW.png]">
     <source media="(prefers-color-scheme: light)" srcset="[https://i.imgur.com/xcmTyPZ.png]">
-    <img alt="StreamPayments logo" src="(https://imgur.com/77SRbou)">
+    <img alt="StreamPayments logo" src="https://i.imgur.com/77SRbou.png">
     </picture>
   </a>
 </p>
-<h1 align="center">
+<h2 align="center">
   **Stream**Payments™ Gateway (under construction)
 <h4 align="center">
 **Stream**Payments™ and the concept of a Web3 payment gateway API. **Stream**Payments™ is a platform (Based on Medusa Admin UI) that offers a Web3-based payment gateway API for businesses to integrate online payment processing with blockchain technology. **Stream**Payments™ Web3 payment gateway refers to the next evolution of the internet, where decentralized technologies like Circle´s CCTP protocol, USDC stablecoin, and Solana blockchain technologies are used to build applications that are more secure, private, and user-centric.
@@ -35,7 +35,6 @@
 # StreamPayments - A Web3 Payment Provider for Medusajs + Supabase, Postgres DB
 
 **StreamPayments** is an innovative Web3 payment provider designed specifically for the Medusajs e-commerce platform, empowered by Supabase and Postgres DB. This payment gateway seamlessly integrates blockchain technology, offering a robust and secure payment solution for online merchants.
-
 
 ## Key Features:
 
