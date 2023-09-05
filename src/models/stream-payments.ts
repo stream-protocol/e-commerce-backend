@@ -1,27 +1,31 @@
-// Import necessary dependencies and modules
-import { Entity, PrimaryGeneratedColumn, Column, BaseEntity, OneToMany } from "typeorm";
-import { Payment } from "./models/stream-payments"; // Import the Payment model if you have one
+import {
+  Entity,
+  PrimaryGeneratedColumn,
+  Column,
+  CreateDateColumn,
+  UpdateDateColumn,
+} from 'typeorm';
 
-// Define the Stream Payment entity
-@Entity()
-export class Payment extends BaseEntity {
-  @PrimaryGeneratedColumn()
-  id: number;
+@Entity('stream_payments')
+export class StreamPayment {
+  @PrimaryGeneratedColumn('uuid')
+  id: string;
 
-  @Column()
-  transactionId: string;
+  @Column({ type: 'text', unique: true })
+  paymentSessionId: string;
 
-  @Column()
+  @Column({ type: 'decimal', precision: 10, scale: 2 })
   amount: number;
 
-  @Column()
-  currency: string;
+  @Column({ type: 'text', nullable: true })
+  solanaTxId: string | null;
 
-  // Add more fields specific to Stream Payment model
+  @Column({ type: 'text', nullable: true }) // Add this column for payment method
+  paymentMethod: string | null;
 
-  // Define the relationship with Payment if applicable
-  @OneToMany(() => Payment, (payment) => payment.streamPayment)
-  payments: Payment[];
+  @CreateDateColumn({ type: 'timestamp' })
+  createdAt: Date;
 
-  // Define any methods or custom logic related to StreamPayment
+  @UpdateDateColumn({ type: 'timestamp' })
+  updatedAt: Date;
 }
