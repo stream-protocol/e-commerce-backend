@@ -108,6 +108,12 @@ npm test
 
 When making commits, please follow our [commit message guidelines](COMMIT_GUIDELINES.md) for clear and descriptive messages that convey the purpose of each commit.
 
+## Project Documentation
+
+The purpose of this section is to provide detailed guidance for developers interested in contributing to the **Stream**Payments™ project. We welcome talented and passionate developers to join our team and help shape the future of web3 payments in e-commerce.
+
+![Documentation] https://app.gitbook.com/invite/9eBaoUspGpGsG968Qbyp/aB9DR79hOZHVtMTWC4Ei
+
 ## License
 
 By contributing to **Stream**Payments, you agree that your contributions will be licensed under the project's [LICENSE](LICENSE). This ensures that your contributions are properly credited and protected.

@@ -8,9 +8,9 @@
   </a>
 </p>
 <h1 align="center">
-  StreamPayments™ Gateway (under construction)
+  **Stream**Payments™ Gateway (under construction)
 <h4 align="center">
-StreamPayments™ and the concept of a Web3 payment gateway API. StreamPayments™ is a platform (Based on Medusa Admin UI) that offers a Web3-based payment gateway API for businesses to integrate online payment processing with blockchain technology. StreamPayments™ Web3 payment gateway refers to the next evolution of the internet, where decentralized technologies like Circle´s CCTP protocol, USDC stablecoin, and Solana blockchain technologies are used to build applications that are more secure, private, and user-centric.
+**Stream**Payments™ and the concept of a Web3 payment gateway API. **Stream**Payments™ is a platform (Based on Medusa Admin UI) that offers a Web3-based payment gateway API for businesses to integrate online payment processing with blockchain technology. **Stream**Payments™ Web3 payment gateway refers to the next evolution of the internet, where decentralized technologies like Circle´s CCTP protocol, USDC stablecoin, and Solana blockchain technologies are used to build applications that are more secure, private, and user-centric.
 <h4 align="center">
   <a href="https://app.gitbook.com/invite/9eBaoUspGpGsG968Qbyp/aB9DR79hOZHVtMTWC4Ei">Documentation</a> |
   <a href="https://www.streampayments.org">Website</a>
@@ -32,11 +32,44 @@ StreamPayments™ and the concept of a Web3 payment gateway API. StreamPayments�
   </a>
 </p>
 
-## Project Description
+# StreamPayments - A Web3 Payment Provider for Medusajs + Supabase, Postgres DB
 
-Information about **Stream**Payments™ and the concept of a Web3 payment gateway API. It sounds like **Stream**Payments™ is a platform that offers a Web3-based payment gateway API for businesses to integrate online payment processing with blockchain technology. Web3 typically refers to the next evolution of the internet, where decentralized technologies like blockchain are used to build applications that are more secure, private, and user-centric.
+**StreamPayments** is an innovative Web3 payment provider designed specifically for the Medusajs e-commerce platform, empowered by Supabase and Postgres DB. This payment gateway seamlessly integrates blockchain technology, offering a robust and secure payment solution for online merchants.
 
-In the context of the Solana blockchain and Web3 payment platform, here are key points to consider:
+
+## Key Features:
+
+- **Medusajs Integration**: **Stream**Payments is tailored to seamlessly integrate with the Medusajs e-commerce platform. It enables Medusajs merchants to effortlessly accept blockchain-based payments, enhancing their payment processing capabilities.
+
+- **Web3 Technology**: Built on the foundation of Web3 technology, **Stream**Payments leverages the power of decentralized networks to offer secure and transparent payment solutions.
+
+- **Supabase Integration**: With Supabase, **Stream**Payments enhances data management and storage capabilities, ensuring the reliability and scalability of payment transactions.
+
+- **Postgres Database**: The integration with Postgres DB enhances data management and processing, providing robust storage and retrieval capabilities for payment-related information.
+
+- **Cryptocurrency Support**: **Stream**Payments offers support for various cryptocurrencies, allowing customers to make payments using their preferred digital assets.
+
+- **Stablecoin Payments**: In addition to cryptocurrencies, **Stream**Payments supports stablecoin payments, providing stability and reliability in e-commerce transactions.
+
+- **Merchant Fees**: StreamPayments allows merchants to set up and manage fees, providing flexibility in revenue management.
+
+- **StreamPOS Integration**: Seamlessly integrate **Stream**Payments with StreamPOS - a Point of Sale system designed for Medusajs store owners. This integration enhances in-store payment processing, providing a unified payment experience.
+
+## Benefits:
+
+- **Security**: **Stream**Payments prioritizes security, ensuring that all payment transactions are protected using cutting-edge encryption and blockchain technology.
+
+- **Transparency**: Blockchain-based payments offer transparency, allowing customers to verify transactions easily.
+
+- **Scalability**: The integration with Supabase and Postgres DB ensures that StreamPayments can handle a high volume of transactions without compromising performance.
+
+- **Customization**: Merchants can customize and configure payment options, fees, and stablecoin preferences to align with their business needs.
+
+- **Seamless Experience**: Customers benefit from a seamless and secure payment experience, enhancing their trust and satisfaction.
+
+**Stream**Payments is revolutionizing the way payments are processed in e-commerce, offering a future-ready solution that combines the power of Web3, Medusajs, Supabase, and Postgres DB. It's time to explore the possibilities of blockchain-based payments with StreamPayments.
+
+### In the context of the Solana blockchain and Web3 payment platform, here are key points to consider:
 
 1. **Decentralization:** Web3 applications and payment gateways leverage the decentralized nature of blockchain technology. Transactions are verified by a distributed network of nodes, reducing the reliance on a central authority.
 
@@ -52,13 +85,15 @@ In the context of the Solana blockchain and Web3 payment platform, here are key 
 
 7. **Decentralized Finance (DeFi):** Stream (Web3) Payment Gateways can be integrated with DeFi protocols, allowing for decentralized lending, borrowing, and other financial services.
 
-8. **Web3 Wallets:** Users require a Web3 wallet (such as a browser extension, StreamPay wallet, or other mobile apps) to interact with Web3 payment gateways and sign transactions securely.
+8. **Web3 Wallets:** Users require a Web3 wallet (such as a browser extension, Stream**Pay** wallet, or other mobile apps) to interact with Web3 payment gateways and sign transactions securely.
 
-9. **StreamPOS: Point Of Sale System:** Medusa backend + StreamPOS Widget
+9. **StreamPOS: Point Of Sale System:** Medusa backend + Stream**POS** Widget
    
-10. **Merchant Portal (Medusa Admin UI):**
+10. **Merchant Portal (Medusa Admin UI):** 
+
+**Stream**Payments™ Merchant Portal is a platform that offers a Web3-based payment gateway API for businesses to integrate online payment processing with Solana blockchain technology. Web3 typically refers to the next evolution of the internet, where decentralized technologies like blockchain are used to build applications that are more secure, private, and user-centric.
     
-12. **StreamPayments Widgets:**
+12. **StreamPay Widgets:**
 
 <p align="center">
   Medusa: Building blocks for digital commerce
