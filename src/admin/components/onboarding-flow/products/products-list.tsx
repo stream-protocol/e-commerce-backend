@@ -21,12 +21,12 @@ const ProductsList = ({ onNext, isComplete }: StepContentProps) => {
   const createSample = async () => {
     try {
       const { collection } = await createCollection({
-        title: "Merch",
-        handle: "merch",
+        title: "StreamPay",
+        handle: "StreamPay",
       });
       const { product } = await createProduct({
-        title: "Medusa T-Shirt",
-        description: "Comfy t-shirt with Medusa logo",
+        title: "StreamPay T-Shirt",
+        description: "Comfy t-shirt with StreamPay logo",
         subtitle: "Black",
         is_giftcard: false,
         discountable: false,

@@ -1,0 +1,1 @@
+export { default as StreamPaymentsProvider } from './stream-payments-provider';
